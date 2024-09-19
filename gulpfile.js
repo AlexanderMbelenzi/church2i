@@ -21,8 +21,9 @@ var path = {
     images: "source/images/**/*.+(png|jpg|gif|svg)",
   },
   build: {
-    dirBuild: "theme/",
-    dirDev: "theme/",
+    dirBuild: "public/", // Renamed from theme/ to public/
+    dirDev: "public/",
+    
   },
 };
 
