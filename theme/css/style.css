@@ -989,43 +989,56 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-.banner .block h1 {
+/* Banner Text Styling */
+.banner .block h1,
+.banner .block h2 {
   text-transform: uppercase;
   font-size: 3.5rem;
-  background: linear-gradient(90deg,rgb(0, 217, 255), rgb(114, 7, 236));  /* Initial gradient */
+  background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236));  /* Full gradient */
   -webkit-background-clip: text;
-  animation: gradientShift 3s linear infinite; /* Animation */
-
   background-clip: text;
   color: transparent;
   font-weight: 500;
   margin-bottom: 5px;
   text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
+  animation: gradientShift 3s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif; /* Using Poppins for a modern, cooler look */
 }
-@media (max-width: 767px) {
-  .banner .block h1 {
-    font-size: 3rem;
-    
-  }
-}
-@media (max-width: 400px) {
-  .banner .block h1 {
-    font-size: 2rem;
-    
-  }
-}
-.banner .block h2 {
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  background: linear-gradient(90deg,rgb(0, 217, 255), rgb(114, 7, 236));  /* Initial gradient */
-  -webkit-background-clip: text;
-  animation: gradientShift 3s linear infinite; /* Animation */
 
-  background-clip: text;
-  color: transparent;
-   font-weight: 400;
-  text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
+/* Responsive Font Size */
+@media (max-width: 767px) {
+  .banner .block h1,
+  .banner .block h2 {
+    font-size: 3rem;
+  }
 }
+
+@media (max-width: 400px) {
+  .banner .block h1,
+  .banner .block h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* To ensure gradient covers the whole text */
+.banner .block h1,
+.banner .block h2 {
+  background-size: 200% 200%;
+}
+
 @media (max-width: 767px) {
   .banner .block h2 {
     font-size: 3rem;
