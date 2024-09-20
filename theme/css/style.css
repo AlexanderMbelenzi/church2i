@@ -449,7 +449,6 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
-  border-radius: 40px;
 
 }
 
@@ -519,12 +518,13 @@ select.form-control:not([size]):not([multiple]) {
 .btn-white-md {
   background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
   color: #ffffff;
-  padding: 15px 40px;
-  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 37px;
 }
 .btn-white-md:hover {
-  background: rgb(114, 7, 236);
-  color: #fff;
+  background: linear-gradient(90deg, rgb(62, 172, 192), rgb(112, 29, 207)); /* Gradient applied directly */
+  color: #ffffff;
 }
 
 .btn-rounded-icon {
@@ -987,14 +987,12 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: lowercase;
   font-weight: normal;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
 }
 /* Banner Text Styling */
 .banner .block h1,
 .banner .block h2 {
-  text-transform: uppercase;
   font-size: 3.5rem;
-  background: linear-gradient(90deg, rgb(14, 153, 218), rgb(117, 13, 236));  /* Full gradient */
+  background: linear-gradient(90deg, rgb(14, 153, 218), rgb(117, 13, 236)); /* Full gradient */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1005,6 +1003,7 @@ select.form-control:not([size]):not([multiple]) {
   font-family: 'Poppins', sans-serif; /* Using Poppins for a modern, cooler look */
   opacity: 0; /* Start invisible */
   transform: translateY(30px); /* Initial position */
+  background-size: 200% 100%; /* Ensures smooth gradient transition */
 }
 
 /* Responsive Font Size */
@@ -1025,13 +1024,13 @@ select.form-control:not([size]):not([multiple]) {
 /* Gradient Animation */
 @keyframes gradientShift {
   0% {
-    background-position: 0% 50%;
+    background-position: 100% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 0% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 100% 50%;
   }
 }
 
@@ -1053,16 +1052,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
-@media (max-width: 767px) {
-  .banner .block h2 {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 400px) {
-  .banner .block h2 {
-    font-size: 2rem;
-  }
-}
+
 .banner .block h6 {
   color: #fff;
   font-weight: 400;
