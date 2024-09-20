@@ -1368,6 +1368,15 @@
   <script src="plugins/google-map/gmap.js"></script>
   <!-- Custom Script -->
   <script src="js/script.js"></script>
+  <script>window.addEventListener('scroll', function () {
+	const navbar = document.querySelector('.main-nav');
+	if (window.scrollY > 50) {
+	  navbar.classList.add('navbar-scrolled');
+	} else {
+	  navbar.classList.remove('navbar-scrolled');
+	}
+  });
+  </script>
 </body>
 
 </html>

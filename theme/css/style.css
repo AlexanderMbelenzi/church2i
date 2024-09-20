@@ -547,13 +547,24 @@ border-radius: 30px;
   border: none; /* Remove any borders */
 
 }
-@media (max-width: 767px) {
-  .main-nav {
-    position: relative;
-    border: none; /* Remove any borders */
 
+/* When scrolling, slightly darken the navbar while keeping it transparent */
+.navbar-scrolled {
+  background: rgba(0, 0, 0, 0.3); /* Adjust the alpha for slight darkness */
+  transition: background 0.3s ease;
+}
+
+/* Ensure the background stays as the common background on small screens when toggled */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-size: cover;
+    background-color: #161616;
+    background-position: center center;
+    color: #ffffff;
   }
 }
+
+
 .main-nav .navbar-brand {
   padding: 35px 40px 35px 50px;
 }
@@ -570,6 +581,7 @@ border-radius: 30px;
 .main-nav .navbar-toggler {
   font-size: 1.5rem;
   margin-right: 15px;
+  color: #ffffff;
 }
 .main-nav .navbar-nav .nav-item {
   position: relative;
@@ -937,6 +949,7 @@ border-radius: 30px;
 .banner {
   padding: 250px 0 150px;
   position: relative;
+  height: 100vh;
 }
 @media (max-width: 1024px) {
   .banner {
