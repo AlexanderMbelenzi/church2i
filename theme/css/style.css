@@ -505,7 +505,7 @@ select.form-control:not([size]):not([multiple]) {
   background: rgb(114, 7, 236);
   color: #fff;
   outline: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 .btn-main-sm:hover {
   color: #fff;
@@ -521,6 +521,8 @@ select.form-control:not([size]):not([multiple]) {
   padding: 10px 30px;
   font-size: 15px;
   border-radius: 37px;
+  animation: fadeIn 1s ease-out forwards, gradientShift 3s ease-in-out infinite;
+
 }
 .btn-white-md:hover {
   background: linear-gradient(90deg, rgb(62, 172, 192), rgb(112, 29, 207)); /* Gradient applied directly */
@@ -1007,14 +1009,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 /* Responsive Font Size */
-@media (max-width: 767px) {
+@media (max-width: 967px) {
   .banner .block h1,
   .banner .block h2 {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .banner .block h1,
   .banner .block h2 {
     font-size: 2rem;
@@ -1057,8 +1059,14 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
   font-weight: 400;
   margin-bottom: 50px;
-}
+  animation: fadeIn 1s ease-out forwards, gradientShift 3s ease-in-out infinite;
 
+}
+@media (max-width: 775px) {
+  .banner .block h6 {
+    font-size: 16px;
+  }
+}
 .banner-two {
   padding: 250px 0 150px;
   position: relative;
