@@ -518,7 +518,7 @@ select.form-control:not([size]):not([multiple]) {
 .btn-white-md {
   background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 15px;
   border-radius: 37px;
 }
