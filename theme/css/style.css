@@ -449,7 +449,7 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
-
+border-radius: 30px;
 }
 
 .btn-main {
@@ -520,6 +520,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #ffffff;
   padding: 10px 25px;
   font-size: 13px;
+  margin-bottom: 20%;
   border-radius: 37px;
   animation: fadeIn 1s ease-out forwards, gradientShift 3s ease-in-out infinite;
 
@@ -1007,6 +1008,9 @@ select.form-control:not([size]):not([multiple]) {
   transform: translateY(30px); /* Initial position */
   background-size: 200% 100%; /* Ensures smooth gradient transition */
 }
+.banner .block h1 {
+padding-top: 10%;
+}
 
 /* Responsive Font Size */
 @media (max-width: 967px) {
@@ -1058,13 +1062,13 @@ select.form-control:not([size]):not([multiple]) {
 .banner .block h6 {
   color: #fff;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   animation: fadeIn 1s ease-out forwards, gradientShift 3s ease-in-out infinite;
 
 }
 @media (max-width: 775px) {
   .banner .block h6 {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 .banner-two {
