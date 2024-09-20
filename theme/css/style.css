@@ -518,8 +518,8 @@ select.form-control:not([size]):not([multiple]) {
 .btn-white-md {
   background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
   color: #ffffff;
-  padding: 10px 30px;
-  font-size: 15px;
+  padding: 10px 25px;
+  font-size: 13px;
   border-radius: 37px;
   animation: fadeIn 1s ease-out forwards, gradientShift 3s ease-in-out infinite;
 
@@ -1064,7 +1064,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 @media (max-width: 775px) {
   .banner .block h6 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .banner-two {
