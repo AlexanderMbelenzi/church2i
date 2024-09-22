@@ -1156,6 +1156,7 @@ background-repeat: no-repeat !important;
 
 .about .image-block {
   padding: 30px;
+  border-radius: 17px;
   animation: fadeIn 1s ease-out forwards, gradientShift 3s ease-in-out infinite;
 
 }
@@ -1362,6 +1363,8 @@ background-repeat: no-repeat !important;
   display: flex;
   justify-content: center;
   margin-top: 14px;
+  border-radius: 17px;
+  
 }
 .schedule .schedule-tab ul li.nav-item {
   margin-right: 10px;
@@ -1419,6 +1422,7 @@ background-repeat: no-repeat !important;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 30px;
+  transition: all ease-in-out 0.3s;
 }
 .schedule .schedule-contents .schedule-item ul {
   margin-bottom: 0;
